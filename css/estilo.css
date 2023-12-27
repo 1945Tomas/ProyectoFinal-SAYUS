@@ -1,3 +1,85 @@
 *{
-    background-color: blanchedalmond;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color1:#BFAF8F;
+    --color2:#F2E2C4;
+    --color3:#736451;
+    --color4:#401E01;
+    --color5:#0D0D0D;
+
+}
+#contenedor{
+background-color: var(--color2);
+color: var(--color2);
+}
+#contenedor h2 {
+    text-align: justify;
+    padding: 2.5rem;
+}
+
+.navbar{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    padding: 1.3rem;
+    border-radius: 2.2rem;
+    text-transform: uppercase;
+    background-color: var(--color2);
+    color: var(--color3);
+    font-weight: 700;
+}
+#divPrincipal{
+    height: 60%;
+    padding: 1rem;
+}  
+#resumen{
+    background-color: var(--color4);
+}
+#idAlemania{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#h2Inicial{
+    font-size: 2rem;
+    padding: 2.9rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.cardTanques{
+    height: max-content;
+    background-color: var(--color5);
+    margin:auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.fotoCards{
+    width: 45%;
+}
+.tituloCards{
+    color:var(--color1);
+    width: 15%;
+    font-size: 1.3rem;
+}
+.descripcion{
+    color: var(--color2);
+    text-align: justify;
+    padding: .5rem;
+    margin: auto;
+    width: 40%;
+    font-size: .5;
+}
+#juntos{
+    display: flexbox;
+    justify-content: space-around;
 }

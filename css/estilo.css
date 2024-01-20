@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 :root{
     --color1:#BFAF8F;
@@ -8,39 +9,168 @@
     --color3:#736451;
     --color4:#401E01;
     --color5:#0D0D0D;
+    --color6:white;
+    --color7:#d7b165;
+
 
 }
+/* header y star */
+header {
+    background: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+
+.h1Header {
+    padding: .5rem;
+    color: var(--color3);
+}
+
+.star{
+    padding: .7rem;
+    width: 200px;
+    background-color: transparent;
+    color:#d7b165 ;
+    background: transparent;
+}
+#btnStyle{
+    background-color: transparent;
+    border:none;
+    padding: 1rem;
+}
+#contedorStarList{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* CARRUSEL */
+#padre h3 {
+    font-weight: 700;
+    color: var(--color7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+#padre p {
+    font-size: 1.5rem;
+    font-size: 1.3rem;
+}
+#demo{
+    height: auto;
+}
+#padre{
+    height:auto;
+}
+.carousel-item{
+    height: auto;
+    
+}
+.carousel-item .active {
+    height: max-content;
+}
+.d-block{
+    width: 100%;
+    height: 370px;
+}
+.sound{
+    color: var(--color6);;
+    padding: .5rem;
+    background-color: transparent;
+    padding: 5px;
+}
+.botonesAudio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    color: var(--color4);
+    background-color: var(--color6);
+    
+}
+.botonesAudio i {
+    color: var(--color4);
+}
+
+/* Historia */
+#resumen{
+    text-align: center;
+    color: var(--color5);
+    padding: 2.3rem;
+}
+#resumen h2 {
+    color: #d7b165;
+}
+#resumen hr{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+/* Graficos */
+.hr{
+padding: auto;
+}
+.graficos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+    height: 500px;
+    width: 90%;
+}
+.graficos h2 {
+    text-align: center;
+    padding: 1rem;
+}
+#tanquesGrafico{
+    height: 400px;
+}
+
+
 #contenedor{
-background-color: var(--color2);
+background-color: var(--color6);
 color: var(--color2);
+height: max-content;
 }
 #contenedor h2 {
     text-align: justify;
     padding: 2.5rem;
 }
-
-.navbar{
+.h2navbar{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+.navbar {
     height: 20vh;
+    width: 50%;
+    margin: auto;
+    padding: .3rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
-.btn{
-    padding: 1.3rem;
+.navbar button{
+    padding: 1rem;
     border-radius: 2.2rem;
     text-transform: uppercase;
-    background-color: var(--color2);
-    color: var(--color3);
+    background-color: var(--color1);
+    color: var(--color4);
     font-weight: 700;
 }
+
 #divPrincipal{
     height: 60%;
     padding: 1rem;
 }  
-#resumen{
-    background-color: var(--color4);
-}
+
 #idAlemania{
     list-style: none;
     display: flex;
@@ -48,38 +178,184 @@ color: var(--color2);
     align-items: center;
 }
 #h2Inicial{
-    font-size: 2rem;
+    font-size: 3.2rem;
     padding: 2.9rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    color: var(--color4)!important;
+    backdrop-filter: blur(.3rem);
+    font-weight: 700;
 }
 
-.cardTanques{
-    height: max-content;
-    background-color: var(--color5);
-    margin:auto;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-.fotoCards{
-    width: 45%;
-}
-.tituloCards{
-    color:var(--color1);
-    width: 15%;
-    font-size: 1.3rem;
-}
-.descripcion{
-    color: var(--color2);
-    text-align: justify;
-    padding: .5rem;
-    margin: auto;
-    width: 40%;
-    font-size: .5;
-}
+/* SECTOR CARDS */
 #juntos{
-    display: flexbox;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+  /* Tarjeta de tanque */
+#contPrincipalT{
+    display: none;
     justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height:auto;
+    flex-direction: row;
+    padding: 5px;
+}
+.tarjetasTank {
+    background: var(--color5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    position: relative;
+    height: 380px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin:auto;
+}
+
+.tarjetasTank h2 {
+    text-align: center;
+    color: var(--color4);
+    margin: auto;
+    font-size: 2rem;
+    padding: 0%;
+    height: auto;
+    font-weight: 600;
+}
+.tarjetasTank p {
+    text-align: center;
+}
+
+.tarjetasTank img {
+    width: 80%;
+    height: 100%;
+}
+.contenedorImg {
+    height: 300px;
+    background-size: cover;
+}
+
+.infoExtra {
+    background: var(--color4);
+    color: var(--color6);
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+.interiorTarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+
+/* footer */
+footer{
+    background-color: rgb(54, 49, 49);
+    color: var(--color6);
+    height:auto;
+    text-align: justify;
+    margin: auto;
+    padding: 5px;
+}
+footer h2 {
+    text-align: start;
+    padding:.3rem ;
+}
+footer p {
+    text-align: start;
+    padding: .1rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h1Header {
+        padding: .5rem 0;
+    }
+
+    .star {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #btnStyle {
+        padding: 0.5rem;
+    }
+
+    #contedorStarList {
+        width: 100%;
+    }
+
+    #resumen {
+        padding: 1.5rem;
+    }
+
+    .graficos {
+        padding: 2rem;
+    }
+
+    #tanquesGrafico {
+        height: 300px;
+    }
+
+    #contenedor {
+        padding: 1rem;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #divPrincipal {
+        padding: 1rem;
+        height: auto;
+    }
+
+    #h2Inicial {
+        padding: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    #contPrincipalT {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .tarjetasTank {
+        height: auto;
+    }
+
+    .tarjetasTank img {
+        width: 100%;
+        height: auto;
+    }
+
+    .infoExtra {
+        width: 100%;
+        margin-top: 1rem;
+    }
 }

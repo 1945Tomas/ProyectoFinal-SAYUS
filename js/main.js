@@ -90,7 +90,6 @@ function mixto (tanquesf, botones){
             tipoPeso.textContent = tipo;
             añoF.textContent = `Año :  ${fabricacion}`;
             detallesTanque.textContent = detalles;
-            //aleatorio.textContent = `<i class="fa-regular fa-star"></i>`;
         }
         crearImagEnLi.addEventListener("mouseover",()=>{ 
             
@@ -102,8 +101,6 @@ function mixto (tanquesf, botones){
     const starBtn = document.querySelector("#btnMostrar");
     const contenedorStar = document.querySelector("#contedorStarList");
     const contenedorUl = document.querySelector("#ulStar");
-    //const ulStar = document.createElement("ul");
-    //contenedorStar.appendChild(ulStar);
     const liStar = document.createElement("li");
 
     function agregarStar (){
@@ -124,7 +121,7 @@ function mixto (tanquesf, botones){
 
     function mostrarStar (){
         Swal.fire({
-            imageUrl: "/imagenes/sweet/fondo.jpg",
+            imageUrl: "./imagenes/sweet/fondo.jpg",
             imageWidth: 200,
             imageHeight: 200,
             title: contenedorUl,

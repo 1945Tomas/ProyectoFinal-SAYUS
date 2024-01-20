@@ -135,7 +135,7 @@ localStorage.setItem('Base-tanques', bdTJson);
 
 
 //fetch y json 
-fetch('/json/baseDatos.json')  // 
+fetch('http://127.0.0.1:5500/json/baseDatos.json')  // 
     .then(datos => {
         if (!datos) {
             throw new Error(`Falla de carga !!`);
